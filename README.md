@@ -1,45 +1,44 @@
-<h1 align="center">🌲 Linktree</h1>
-<h3 align="center">Simple site to group all my profiles on social networks in one place.</h3>
+# vCard - Personal portfolio
 
+![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
+vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
+## Demo
 
-Landing Page:
-![screenshot](https://raw.githubusercontent.com/SamirPaulb/link/main/Samir-Paul-All-Links.png)
+![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
+![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
+## Prerequisites
 
+Before you begin, ensure you have met the following requirements:
 
-## 💡 About the project
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-This is an open source project that serves as a free alternative to the Linktree website.
-- [Demo 🚀 ](https://samirpaulb.github.io/link/)
+## Installing vCard
 
-## 🚀 Getting started
+To install **vCard**, follow these steps:
 
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-[Download the ZIP from this location](https://github.com/SamirPaulb/link/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+Linux and macOS:
+
 ```bash
-git clone https://github.com/SamirPaulb/link
+sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 ```
-- Once the files are on your machine, open the _linktree_ folder in [Visual Studio Code](https://code.visualstudio.com/).
-- With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-- Change the profile image and texts in the `index.html` file.
-- Change the colors and fonts in the `style.css` file.
-- To change the background, go to the `style.css` file on line 17, uncomment the code snippet and change the url to whatever image you want.
 
-## 🤔 How to contribute
+Windows:
 
-- Fork this repository;
-- Create a branch with your feature: `git checkout -b my-feature`;
-- Commit your changes: `git commit -m "feat: my new feature"`;
-- Push to your branch: `git push origin my-feature`.
+```bash
+git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+```
 
-Once your pull request has been merged, you can delete your branch.
+## Contact
 
-## 📝 License
+If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
 
-This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
+## License
 
-
-
-Made with ❤️ by [@SamirPaulb](https://github.com/SamirPaulb) :wave: [Get in touch](https://www.linkedin.com/in/SamirPaul)
+MIT
