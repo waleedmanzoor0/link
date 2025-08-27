@@ -732,12 +732,8 @@ Loaded pallets and maintained health & safety compliance.
   </a>
 </p>
               </div>
-            </li>
 
-        </header>
- <ul class="service-list">
-
-            <li class="service-item">
+<li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/email.png
@@ -759,9 +755,17 @@ rel="noopener noreferrer"
 
             </li>
 
+
+
+        </header>
+ <ul class="service-list">
+
+
+
       </article>
     </div>
   </main>
+
 
 
 
