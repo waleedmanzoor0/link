@@ -1,3 +1,15 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -325,8 +337,8 @@ text-overflow: clip;
   border: 4px solid #fff;     /* white border */
   border-radius: 20px;        /* rounded box */
   overflow: hidden;           /* ensures image stays inside rounded corners */
-  width: 150px;               /* set width */
-  height: 150px;              /* set height */
+  width: 96px;
+  height: 96px;
 }
 
 .avatar-box img {
@@ -552,7 +564,7 @@ text-overflow: clip;
 
 .service-item-text {
   color: var(--light-gray);
-  font-size: var(--fs-7);
+  font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
@@ -1263,10 +1275,11 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 580px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
+  .avatar-box {
+    width: 120px;
+    height: 120px;
+  }
+}
 
   :root {
 
