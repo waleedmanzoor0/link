@@ -146,6 +146,27 @@ html[data-theme="dark"] .portrait{border-color:#293124;box-shadow:0 18px 48px rg
 }
 @media(max-width:430px){.hero-actions .btn{width:100%}}
 
+  
+/* Mobile portrait refinement */
+@media(max-width:760px){
+  .hero{width:100%;padding:42px 0 36px;gap:20px;overflow:hidden}
+  .hero>div{width:min(100% - 38px,560px);margin:0 auto}
+  .portrait{width:clamp(148px,38vw,172px);height:clamp(148px,38vw,172px);flex:0 0 auto;object-fit:cover;object-position:center 30%;border-width:5px;margin:0 auto;transform:none}
+  .hero .eyebrow{font-size:.66rem;letter-spacing:.13em}
+  .hero h1{font-size:clamp(2.55rem,10vw,3.7rem);line-height:1.05;letter-spacing:-.07em;margin:3px 0 12px}
+  .hero-copy{font-size:.94rem;line-height:1.75;max-width:34rem}
+  .hero-actions{gap:10px;margin-top:19px}
+  .scroll-note{font-size:.62rem;letter-spacing:.1em;margin-top:19px}
+}
+@media(max-width:430px){
+  .hero{padding-top:34px;gap:17px}
+  .portrait{width:150px;height:150px}
+  .hero-copy{padding:0 2px}
+  .hero-actions{flex-direction:column;align-items:stretch;width:100%;max-width:320px}
+  .hero-actions .btn{width:100%;padding:13px 17px}
+  .scroll-note{max-width:280px;line-height:1.6}
+}
+
   </style>
 </head>
 <body>
