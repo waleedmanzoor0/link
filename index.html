@@ -20,12 +20,34 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent-dark);outlin
 .wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
 .nav{position:sticky;top:0;z-index:20;background:rgba(248,248,246,.78);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid rgba(225,228,219,.75)}
 .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.07em;font-size:1.18rem}.brand span{color:var(--accent-dark)}
+.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.055em;font-size:1.02rem;white-space:nowrap}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.theme-toggle{width:40px;height:40px;border:1px solid #dfe3d8;border-radius:50%;background:rgba(255,255,255,.65);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;transition:background .25s,transform .25s,border-color .25s}
+.theme-toggle:hover{transform:rotate(-10deg);border-color:#aeb99f}
+html[data-theme="dark"]{color-scheme:dark;--bg:#11140f;--surface:rgba(31,36,28,.88);--ink:#f1f3ed;--muted:#a5ac9e;--line:#30372c;--accent:#9dbb7c;--accent-dark:#b5d294}
+html[data-theme="dark"] body{background:radial-gradient(ellipse at 82% 9%,rgba(107,137,77,.13),transparent 28rem),var(--bg);color:var(--ink)}
+html[data-theme="dark"] .nav{background:rgba(17,20,15,.82);border-color:#30372c}
+html[data-theme="dark"] .nav-links{color:#c0c7b8}
+html[data-theme="dark"] .nav-cta,html[data-theme="dark"] .theme-toggle,html[data-theme="dark"] .menu-toggle{background:#20261d;border-color:#3a4432;color:var(--ink)!important}
+html[data-theme="dark"] .btn-primary{background:#dce9cf;color:#20251d}
+html[data-theme="dark"] .btn-secondary{background:#20261d;border-color:#3a4432;color:var(--ink)}
+html[data-theme="dark"] .portrait{border-color:#293124;background:#252d20}
+html[data-theme="dark"] .hero-copy,html[data-theme="dark"] .about-text{color:#b7beb0}
+html[data-theme="dark"] .panel,html[data-theme="dark"] .timeline-item,html[data-theme="dark"] .skill-card,html[data-theme="dark"] .project-card{background:rgba(31,36,28,.86);border-color:#30372c}
+html[data-theme="dark"] .fact,html[data-theme="dark"] .tag{background:#252d20;border-color:#384331;color:#d5dfca}
+html[data-theme="dark"] .fact span,html[data-theme="dark"] .timeline-item p,html[data-theme="dark"] .skill-card p,html[data-theme="dark"] .project-card p,html[data-theme="dark"] .section-intro,html[data-theme="dark"] .date{color:#a5ac9e}
+html[data-theme="dark"] .project-card.featured{background:linear-gradient(145deg,#252f20,#1d241a)}
+html[data-theme="dark"] .project-foot span{background:#293124;border-color:#3b4634;color:#d5dfca}
+html[data-theme="dark"] .contact{background:linear-gradient(125deg,#0b0e0a,#20291b)}
+html[data-theme="dark"] .contact .btn{background:#e6eddf;color:#1b2117}
+html[data-theme="dark"] footer{color:#899284}
+html[data-theme="dark"] .nav-links.open{background:#1b2117;border-color:#30372c}
+html[data-theme="dark"] .nav-links a:hover{background:#293124}
 .nav-links{display:flex;align-items:center;gap:30px;color:#62665d;font-size:.86rem}
 .nav-links a{transition:color .25s ease}.nav-links a:hover{color:var(--accent-dark)}
 .nav-cta{padding:10px 17px;border:1px solid #dfe3d8;border-radius:999px;color:var(--ink)!important;background:rgba(255,255,255,.55)}
 .menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:50%;width:42px;height:42px;color:var(--ink);align-items:center;justify-content:center;cursor:pointer}
-.hero{min-height:660px;padding:118px 0 104px;display:grid;grid-template-columns:minmax(0,1fr) 260px;align-items:center;gap:clamp(40px,8vw,110px);position:relative}
+.hero{min-height:540px;padding:82px 0 72px;display:grid;grid-template-columns:minmax(0,1fr) 260px;align-items:center;gap:clamp(40px,8vw,110px);position:relative}
 .hero:after{content:"";position:absolute;width:310px;height:310px;border-radius:50%;background:rgba(199,218,174,.18);filter:blur(2px);right:-75px;top:110px;z-index:-1}
 .eyebrow{display:flex;align-items:center;gap:11px;color:var(--accent-dark);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 .dot{width:7px;height:7px;border-radius:50%;background:#78975a;box-shadow:0 0 0 5px rgba(183,206,154,.25)}
@@ -40,29 +62,29 @@ h1 span{color:#849b70}
 .portrait{width:250px;aspect-ratio:4/5;border-radius:42% 42% 30px 30px;object-fit:cover;background:#e7e9e2;border:7px solid rgba(255,255,255,.82);box-shadow:0 30px 75px rgba(37,47,27,.14);transform:rotate(2deg);transition:transform .7s var(--ease),box-shadow .7s var(--ease);position:relative;z-index:1}
 .portrait:hover{transform:rotate(0) translateY(-5px);box-shadow:0 36px 85px rgba(37,47,27,.18)}
 .scroll-note{margin-top:55px;color:#92968e;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase}
-section{padding:82px 0}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}
+section{padding:58px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}
 .kicker{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-dark);font-weight:700;margin-bottom:12px}
 h2{font:700 clamp(2rem,4vw,2.85rem)/1.12 Manrope,sans-serif;letter-spacing:-.065em;margin:0}
 .section-intro{color:var(--muted);max-width:430px;margin:0;font-size:.91rem;line-height:1.8}
 .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-.panel{background:var(--surface);backdrop-filter:blur(14px);border:1px solid rgba(231,234,226,.9);border-radius:26px;padding:34px;box-shadow:0 10px 35px rgba(32,38,25,.025)}
+.panel{background:var(--surface);backdrop-filter:blur(14px);border:1px solid rgba(231,234,226,.9);border-radius:22px;padding:26px;box-shadow:0 10px 35px rgba(32,38,25,.025)}
 .about-text{color:#666b61;font-size:.96rem;line-height:2;margin:0}
 .quick-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .fact{padding:19px;border-radius:18px;background:#f5f7f1;border:1px solid #edf0e8;transition:transform .3s var(--ease),background .3s}.fact:hover{transform:translateY(-3px);background:#eff4e9}
 .fact strong{display:block;font:700 1.35rem Manrope,sans-serif;letter-spacing:-.05em}.fact span{font-size:.75rem;color:var(--muted)}
-.timeline{display:grid;gap:12px}
-.timeline-item{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:25px 28px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:21px;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
+.timeline{display:grid;gap:9px}
+.timeline-item{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:19px 23px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:21px;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
 .timeline-item:hover{transform:translateY(-3px);border-color:#d8dfcf;box-shadow:0 12px 30px rgba(32,38,25,.045)}
 .date{font-size:.77rem;color:#858a80;padding-top:3px}
 .timeline-item h3{font:700 .98rem Manrope,sans-serif;margin:0 0 7px;letter-spacing:-.025em}.timeline-item p{font-size:.85rem;color:var(--muted);margin:0;line-height:1.8}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.skill-card{background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:22px;padding:27px;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.skill-card{background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:20px;padding:22px;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
 .skill-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(32,38,25,.06);border-color:#d9e1cf}
 .skill-card .num{font:700 .68rem Manrope,sans-serif;color:var(--accent-dark);letter-spacing:.12em}
 .skill-card h3{font:700 1rem Manrope,sans-serif;margin:15px 0 8px;letter-spacing:-.03em}.skill-card p{font-size:.82rem;color:var(--muted);margin:0;line-height:1.8}
 .tag-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tag{padding:8px 13px;background:#f0f3eb;border:1px solid #e7ebdf;border-radius:999px;font-size:.75rem;color:#59614f}
-.contact{background:linear-gradient(125deg,#20251d,#30392a);color:#f6f7f3;border-radius:30px;padding:clamp(34px,6vw,58px);display:flex;align-items:center;justify-content:space-between;gap:28px;position:relative;overflow:hidden}
+.contact{background:linear-gradient(125deg,#20251d,#30392a);color:#f6f7f3;border-radius:30px;padding:clamp(28px,5vw,42px);display:flex;align-items:center;justify-content:space-between;gap:28px;position:relative;overflow:hidden}
 .contact:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(221,235,205,.13);border-radius:50%;right:15%;top:-190px;box-shadow:0 0 0 35px rgba(221,235,205,.035),0 0 0 70px rgba(221,235,205,.025)}
 .contact>div,.contact>.btn{position:relative;z-index:1}.contact .kicker{color:#c3d9a8}.contact h2{max-width:520px}.contact p{color:#c0c6b8;margin:15px 0 0;max-width:480px;font-size:.9rem}
 .contact .btn{background:#f5f6f1;color:#20251d;white-space:nowrap}.contact .btn:hover{background:#dce8cd}
@@ -83,7 +105,7 @@ footer{padding:30px 0 40px;color:#898e84;font-size:.75rem}.footer-inner{display:
 
   
 .project-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:15px}
-.project-card{position:relative;overflow:hidden;background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:24px;padding:30px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.project-card{position:relative;overflow:hidden;background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:24px;padding:30px;min-height:215px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
 .project-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(32,38,25,.06);border-color:#d9e1cf}
 .project-card.featured{background:linear-gradient(145deg,#edf2e7,#f9faf7)}
 .project-card .project-meta{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-dark);font-weight:700}
@@ -92,7 +114,7 @@ footer{padding:30px 0 40px;color:#898e84;font-size:.75rem}.footer-inner{display:
 .project-foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .project-foot span{font-size:.7rem;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(218,225,208,.9);color:#59614f}
 .project-mark{position:absolute;right:26px;top:22px;font:800 3.2rem Manrope,sans-serif;letter-spacing:-.1em;color:rgba(85,115,61,.12)}
-.research-panel{background:#20251d;color:#f6f7f3;border-radius:26px;padding:clamp(28px,5vw,42px);display:grid;grid-template-columns:1fr .8fr;gap:36px;overflow:hidden;position:relative}
+.research-panel{background:#20251d;color:#f6f7f3;border-radius:26px;padding:clamp(24px,4vw,34px);display:grid;grid-template-columns:1fr .8fr;gap:36px;overflow:hidden;position:relative}
 .research-panel:after{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(221,235,205,.12);border-radius:50%;right:-100px;bottom:-150px;box-shadow:0 0 0 30px rgba(221,235,205,.03),0 0 0 60px rgba(221,235,205,.02)}
 .research-panel>div{position:relative;z-index:1}
 .research-panel h3{font:700 1.35rem/1.3 Manrope,sans-serif;letter-spacing:-.04em;margin:0 0 13px}
@@ -105,8 +127,9 @@ footer{padding:30px 0 40px;color:#898e84;font-size:.75rem}.footer-inner{display:
 <body>
   <nav class="nav" aria-label="Main navigation">
     <div class="wrap nav-inner">
-      <a class="brand" href="#home" aria-label="Waleed Manzoor home">waleed<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-links"><span aria-hidden="true">☰</span></button>
+      <a class="brand" href="#home" aria-label="Waleed Manzoor home">Waleed Manzoor</a>
+      <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><span aria-hidden="true">☾</span></button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-links"><span aria-hidden="true">☰</span></button></div>
       <div class="nav-links" id="site-links">
         <a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#research">Research</a><a href="#skills">Skills</a>
         <a class="nav-cta" href="#contact">Let's connect ↗</a>
@@ -211,7 +234,27 @@ footer{padding:30px 0 40px;color:#898e84;font-size:.75rem}.footer-inner{display:
 
   <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Waleed Manzoor. Made with care.</span><div class="socials"><a href="mailto:muhammadwaleedxd@gmail.com">Email</a><a href="https://www.linkedin.com/in/waleed-manzoor-7568971ba" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/waleedmanzoor0" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
   <script>
+
     document.getElementById('year').textContent = new Date().getFullYear();
+    const themeButton = document.querySelector('.theme-toggle');
+    const themeIcon = themeButton.querySelector('span');
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'dark') document.documentElement.dataset.theme = 'dark';
+    const syncThemeButton = () => {
+      const dark = document.documentElement.dataset.theme === 'dark';
+      themeIcon.textContent = dark ? '☀' : '☾';
+      themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+      themeButton.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#11140f' : '#f8f8f6';
+    };
+    syncThemeButton();
+    themeButton.addEventListener('click', () => {
+      const dark = document.documentElement.dataset.theme !== 'dark';
+      if (dark) document.documentElement.dataset.theme = 'dark';
+      else delete document.documentElement.dataset.theme;
+      localStorage.setItem('portfolio-theme', dark ? 'dark' : 'light');
+      syncThemeButton();
+    });
     const menuButton = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     menuButton.addEventListener('click', () => {
